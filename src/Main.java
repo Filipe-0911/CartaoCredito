@@ -83,7 +83,7 @@ public class Main {
                 case 4:
                     listarCartoes(listaDeCartoes);
                     break;
-                case 5:
+                case 5: //extrato
                     System.out.println("Digite o numero da conta que deseja verificar as compras: ");
                     listarCartoes(listaDeCartoes);
 

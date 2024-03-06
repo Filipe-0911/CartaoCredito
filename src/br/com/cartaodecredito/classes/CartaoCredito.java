@@ -1,5 +1,7 @@
 package br.com.cartaodecredito.classes;
 
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.LinkedList;
 
 public class CartaoCredito {
@@ -18,8 +20,10 @@ public class CartaoCredito {
         this.listaDeCompras.push(compra);
     }
     public void getCompras() {
+        //this.listaDeCompras.sort(Comparator.comparing(Compra::getValor));
+        Collections.sort(this.listaDeCompras);
         for (Compra compra : this.listaDeCompras) {
-            System.out.printf("Produto: %s; Valor: %.2f%n".formatted( compra.getNomeProduto(), compra.getValor()));
+            System.out.println(compra);
         }
 
     }
